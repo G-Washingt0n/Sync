@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <data>
+        <import type="android.view.View"/>
+        <import type="com.gnyblecraft.marcul.ideasproject.Registry.LogInViewModel.STATE"/>
+        <variable
+            name="viewModel"
+            type="com.gnyblecraft.marcul.ideasproject.Registry.LogInViewModel"/>
+    </data>
+
+<android.support.constraint.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:inputType="textEmailAddress"
+        android:layout_width="328dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        android:hint="@string/Email"
+        android:text="@={viewModel.loginEmail}"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarLogin"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:inputType="textPassword"
+        android:layout_width="328dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/Password"
+        android:textSize="12sp"
+        android:text="@={viewModel.loginPassword}"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginEmail"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarLogin"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/darkGreen_color"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+    <ImageView
+        android:id="@+id/imageCross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_close_black_24px"
+        app:layout_constraintTop_toTopOf="@+id/toolbarLogin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarLogin"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:alpha="0.7"
+        app:layout_constraintRight_toRightOf="@+id/toolbarLogin"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/toolbarLogin"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="@{()->viewModel.onCrossClick()}"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Log_in"
+        android:textSize="12sp"
+        android:textColor="@color/almostWhite_textcolor"
+
+        app:layout_constraintLeft_toRightOf="@+id/imageCross"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/toolbarLogin"
+        app:layout_constraintTop_toTopOf="@+id/toolbarLogin"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarLogin"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintVertical_bias="0.565"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:text="@string/Log_in"
+        android:textColor="@color/almostWhite_textcolor"
+        android:textSize="12sp"
+        android:background="@color/darkGreen_color"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/ForgotPasswordQuestion"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="@{()->viewModel.onLogInClick()}"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="12sp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+<Button
+    android:id="@+id/FBLogInButton"
+        android:layout_width="328dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/FBcolor"
+        android:text="Facebook Log In"
+        android:textColor="@color/almostWhite_textcolor"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+    android:onClick="@{()-> viewModel.onFBLogInClick()}"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Already_have_an_account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/textViewSignUp"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}" />
+
+    <TextView
+        android:id="@+id/textViewSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Sign_up"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/textView5"
+        android:onClick="@{()->viewModel.goToSignUp()}"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+    <TextView
+        android:id="@+id/ForgotPasswordQuestion"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Forgot_your_password"
+        android:textSize="12sp"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="@{()->viewModel.onForgotPassword()}"
+        android:visibility="@{viewModel.state == STATE.DATA ? View.VISIBLE : View.GONE}"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:visibility="@{viewModel.state == STATE.PROGRESS ? View.VISIBLE : View.GONE}"
+        app:layout_constraintTop_toTopOf="@+id/toolbarLogin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+</layout>

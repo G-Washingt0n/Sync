@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/LogIn"
+                android:title="Log In"/>
+
+            <item
+                android:id="@+id/SignUp"
+                android:title="Sign up"/>
+
+    </group>
+
+    <item android:title="registry">
+        <item
+            android:id="@+id/Explore"
+            android:title="Explore"
+            app:actionViewClass="android.widget.Spinner">
+        </item>
+
+        <group
+            android:id="@+id/exploreGroup" >
+            <item
+                android:id="@+id/all_areas"
+                android:title="All areas"
+                />
+            <item
+                android:id="@+id/business"
+                android:title="Business"
+                />
+        </group>
+
+            <item
+                android:id="@+id/About_us"
+                android:title="About us" />
+            <item
+                android:id="@+id/Information"
+                android:title="Information" />
+
+    </item>
+
+</menu>

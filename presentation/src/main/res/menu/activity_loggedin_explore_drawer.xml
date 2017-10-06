@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="registry">
+        <item
+            android:id="@+id/Explore"
+            android:title="Explore" />
+        <item
+            android:id="@+id/About_us"
+            android:title="About us" />
+        <item
+            android:id="@+id/Information"
+            android:title="Information" />
+        <item
+            android:id="@+id/LogOutInMenu"
+            android:title="Log out" />
+
+    </item>
+
+</menu>

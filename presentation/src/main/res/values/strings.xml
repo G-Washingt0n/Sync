@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SaveIdeas</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="facebook_app_id">1360443304013095</string>
+    <string name="fb_login_protocol_scheme">fb1360443304013095</string>
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="Log_in">Log in</string>
+    <string name="Sign_up">Sign up</string>
+
+    <string name="Name">Name</string>
+    <string name="Surname">Surname</string>
+    <string name="Email">Email</string>
+    <string name="Phone">Phone(optional)</string>
+    <string name="Password">Password</string>
+    <string name="Facebook_signup">Facebook sign up</string>
+    <string name="Facebook_login">Facebook log in</string>
+    <string name="Already_have_an_account">Already have an account?</string>
+    <string name="Forgot_your_password">Forgot your password?</string>
+    <string name="Reset_password">Reset Password</string>
+
+
+</resources>
