@@ -7,6 +7,9 @@
     <color name="almostWhite_textcolor">#D8D8D8</color>
     <color name="absolute_white_color">#ffffff</color>
     <color name="FBcolor">#3B5998</color>
+    <color name="softGreen_color">#5eafa5</color>
+    <color name="blue_color">#44dafc</color>
     <color name="statusbar_superDarkGreen"
         alpha="0.7f">#00524A</color>
+    <color name="black">#000000</color>
 </resources>

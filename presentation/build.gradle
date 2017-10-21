@@ -39,6 +39,8 @@ dependencies {
         exclude group: 'com.loopj.android' //by artifact name
     }
 
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
     compile 'com.android.support:design:26.0.0-alpha1'
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
     compile 'com.facebook.android:facebook-android-sdk:4.27.0'
@@ -46,6 +48,7 @@ dependencies {
     compile "com.android.support:customtabs:26.0.0-alpha1"
     compile 'com.android.support:support-annotations:+'
     compile "com.android.support:support-fragment:26.0.0-alpha1"
+    compile 'com.squareup.okhttp3:logging-interceptor:3.3.1'
 
     compile project(path: ':domain')
 

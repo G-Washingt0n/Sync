@@ -13,32 +13,45 @@
         android:theme="@style/AppTheme">
         <activity android:name=".StartLogoActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ExploreActivity"/>
-        <activity android:name=".Registry.LogInActivity"/>
-        <activity android:name=".Registry.SignUpActivity"/>
-        <activity android:name=".Registry.ResetPasswordActivity"/>
-        <activity android:name=".Registry.FacebookActivity"/>
+        <activity android:name=".ExploreActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registry.LogInActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registry.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Registry.ResetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".base.WaitScreenActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".userProfile.editProfile.EditProfileActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".userProfile.editProfile.ChangePasswordActivity"
+            android:screenOrientation="portrait"/>
 
 
 
-    </application>
 
-    <meta-data
+
+        <meta-data
         android:name="com.facebook.sdk.ApplicationId"
         android:value="@string/facebook_app_id"/>
 
     <activity android:name="com.facebook.FacebookActivity"
         android:configChanges=
             "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-        android:label="@string/app_name" />
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        />
     <activity
         android:name="com.facebook.CustomTabActivity"
+        android:screenOrientation="portrait"
         android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
@@ -47,6 +60,8 @@
             <data android:scheme="@string/fb_login_protocol_scheme" />
         </intent-filter>
     </activity>
+
+    </application>
 
 
 </manifest>

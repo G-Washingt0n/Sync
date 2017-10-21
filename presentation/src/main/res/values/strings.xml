@@ -11,6 +11,10 @@
     <string name="action_settings">Settings</string>
     <string name="Log_in">Log in</string>
     <string name="Sign_up">Sign up</string>
+    <string name="my_profile">My profile</string>
+    <string name="ideas">Ideas</string>
+    <string name="certificates">Certificates</string>
+    <string name="favorites">Favorites</string>
 
     <string name="Name">Name</string>
     <string name="Surname">Surname</string>
@@ -22,6 +26,52 @@
     <string name="Already_have_an_account">Already have an account?</string>
     <string name="Forgot_your_password">Forgot your password?</string>
     <string name="Reset_password">Reset Password</string>
+    <string name="Edit_profile">Edit profile</string>
+    <string name="your_password">Your password</string>
+    <string name="New_password">New password</string>
+    <string name="Confirm_new_pass">Confirm new password</string>
+    <string name="Change_password">Change password</string>
+    <string name="Choose_your_country">Choose your country</string>
+    <string name="Choose_your_city">Choose your city</string>
+    <string name="Set_your_birthday">Set your birthday</string>
+    <string name="error_msg_name">Empty field is not valid</string>
+    <string name="error_msg_email">Wrong email format</string>
+    <string name="password_mismatch">Password mismatch</string>
+
+
+
+
+
+
+
+
+
+
+
+    <string name="Project_info_text1">Everyone across the world has ideas about solving a problem, improving lives, increasing productivity, preventing damage, saving money etc. The problem is that it is currently very difficult to share them with others to get support while at the same time protecting them internationally.</string>
+    <string name="Project_info_text2">We at Save Ideas have developed this global user-friendly free Web platform for Exchanging, Saving/Protecting, Exposing, and Realising ideas, artistic work, solutions and/or any other form of creative outputs.</string>
+    <string name="Project_info_text3">Save Ideas provides a free service for anyone - students, artists, designers, small businesses and the discerning innovators - who has created something or has an idea but doesn’t have the time or money to copyright their work or hunt for interested investors and customers.</string>
+    <string name="Project_info_text4">Simply by uploading your intellectual works to this Save Ideas site, submitters will automatically and immediately receive a Time Certificate™, which states the exact date and time of submission of new idea. This can then be used to prove rightful ownership and protect the submitters Intellectual Property globally. </string>
+
+    <string name="Missions_text">Our aim is to create an online community where anyone can save and protect their intellectual property, exchange ideas, and communicate with others on a free global platform and attract promoters, customers and investors. </string>
+    <string name="Prof_Hasbo_description">Hazbo holds a doctorate in IT/ICT Management, a Master in Information Economics, and a Master in International Business Management. His professional commercial, research and teaching experience includes working throughout the world. Besides working full-time at a University in Australia he is also both a Visiting and Guest Professor at several prime universities around the world. In 2011 the World Education Congress Asia awarded Hazbo the ‘Best Professor in Economics’ for teaching, integrity and leadership. He has also founded several companies and NGOs in Australia, Ghana. Ethiopia, and Montenegro that he maintains an interest in.</string>
+    <string name="Mr_Hood_description">Robert Hood was admitted as a solicitor to the Supreme Court of NSW in 1966. He has had a wealth of experience in Commercial Law and education. Robert also co-founded the Australian Document Exchange and the Hills Grammar School in Round Corner. He is currently a consultant solicitor to Messenger &amp; Messenger in Orange with whom he has been associated for over twenty years. Robert’s principal areas of practice now are Small Business and Conveyancing. He has wide experience in all associated areas including Old System Titles, Community and Strata Titles Crown Law, Western Division titles Wills, Estates, Powers of Attorney and Guardianship matters and Elder Law. </string>
+    <string name="Ms_Foltea_description">Ms Tatiana has the Master of Law (LL.M ) in Intellectual Property (IP) Law degree from University of Turin and the World Intellectual Property Organisation (WIPO) Turin Italy. She published several articles, besides, in the WIPO Academy papers series, blog posts and white papers from her expertise (IP) area. Her professional experience span over several years working as the Patent Admin Officer in Romania; Legal Advisor at University of Turin, Italy; Patent Information and Research Assistant at European Patent Office, Germany; and at the State Agency on Intellectual Property of Moldova. </string>
+    <string name="Talbots_description">Talbots Pty Ltd is a Sydney based firm of Chartered Accountants which was founded by Mr Frank Talbot in August 1926. The company originally commenced trading as F. Howe Talbot &amp; Co, with the name subsequently shortened in later years to its current trading name - Talbots (www.talbots.com.au). </string>
+    <string name="Prof_Bobek_description">Prof. Dr. Vito Bobek currently works as the manager and owner of Palemid – Consulting, Research, Education LLC and the President of Managing Board at AREMA (Academy of Regional Management). He is also a Professor of International Management at the University of Applied Science FH Joanneum (Graz, Austria) and at the University of Maribor (Slovenia). </string>
+    <string name="Mr_Al_Saud_description"> </string>
+    <string name="Ms_Daniela_Ramirez_description">Ms Daniela currently working in the Financial Department of the Chilean Ministry of Education. Daniela obtained her MBA in Professional Accounting and Auditing at the University of Santiago of Chile (USACH). Ms Ramírez is also an IFRS Certificate holder from the FH Joanneum University in Austria and had postgraduate degree in Auditing and Management. Daniela has vast experience in important private and public Chilean organisations due to her strong audit and financial management development.</string>
+    <string name="Dr_Williams_description">Lesley works as an independent Consultant on infrastructure, rural development, women’s empowerment, government strengthening and education projects around the world. Prior to this she was a New Zealand-Government appointed Director of a State organization (Learning Media Limited, 1991-1997) during a period of public sector reform and a Senior Lecturer in International Marketing, Strategic Management, and Business Communications in New Zealand, Malaysia, and Indonesia (1990-2003). Lesley expertise has seen her appointed to a number of different organisations including the Canterbury Businesswomen’s Expo, TrustBank Board Women on Air, Canterbury Mentoring Scheme and SEA Change CoP, a Climate Change Network funded by the Rockefeller Foundation. </string>
+    <string name="Mr_Abdul_description">Mr Md. Abdul obtained a Masters in Management from Dhaka University in 1997 and completed his Professional Diploma in Web, Graphics and Multimedia Technology, plus a Diploma in Computer Applications from reputable institutions in Bangladesh and India. Mannan more than 20 years of professional work experience with national and international organizations as a Website Designer, Project Manager and Technical Associate for international training, consulting, and IT companies. He has also developed over 100 websites and other multi-media communications and training materials for organisations. </string>
+    <string name="Ms_Unoma_description">She is an NCE Holder in Economics/Political Science from Nwafor Orizu College of Education Nsugbe, Anambra State, Nigeria. Tessy is, by trade an engineer, but also an accomplished musician with several albums of Gospel Music to her credit. In addition, Tessy is the Founder and CEO of the NGO All Nations Arise and Manifest (A.N.A.M.) with its subsidiary for Youth Empowerment of Less Privileged and Talents. </string>
+    <string name="Mr_Lemma_description">Teshager AL is an SAP Enterprise Asset Management/Plant Maintenance consultant who works with Twenty Third Century Systems Global a subsidiary of EOH-Seal. In his professional career he has previously worked at BZT Rental Services PLC (as a General Manager), Dance4Life International (as a member of its International Advocate), Youth Network for Sustainable Development (as a member of its Program Advisory Group) and Various Governmental and Non-Governmental Institutions at various capacities. Teshager holds a BA degree in Economics from Addis Ababa University, College of Commercial Studies. </string>
+    <string name="Ms_Nadejda_Foltea_description">Ms Nadejda Foltea has a Master in Banking and Entrepreneurship, Bachelor Degree in Economics, Professional Accounting Certificate, 1C software ver. 8.2 and The European Foundation Certificate in Banking. She speaks Romanian, English, Russian and Italian language. Her professional experience span over many years working, beside her native, in several European countries. </string>
+    <string name="Mr_Tapsoba_description">Placide Tapsoba, MD, MPH, is the Ghana country director and a senior associate in the Population Council\'s Reproductive Health program. He studied medicine at the University of Padua, Italy, and subsequently earned a master\'s in public health from the University of California, Los Angeles. </string>
+    <string name="Gordan_and_Branko_description">Head of Central and South Africa Office: Angola, Botswana, Malawi, Namibia, South Africa, Swaziland, Zambia, and Zimbabwe. </string>
+    <string name="Dr_Ferenc_description">Dr. Ferenc Guba has a PhD in Economics. Ferenc works as the Head of Purchasing Deptartment at Budapes Spas, Management Consulting at Boda and Partners, and DAS Legal Protection Sales Manager. </string>
+    <string name="Ms_Sandbring_description"> </string>
+    <string name="Mr_Mukashin_description"> </string>
+
 
 
 </resources>

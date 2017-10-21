@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/softGreen_color"
+        app:tabIndicatorColor="@color/statusbar_superDarkGreen"
+        app:tabSelectedTextColor="@color/absolute_white_color"
+        app:tabTextColor="@color/almostWhite_textcolor">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabIdeas"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/ideas"
+            android:alpha="0.7" />
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabCertificates"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/certificates"
+            android:alpha="0.7"/>
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabFavorites"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="@string/favorites"
+            android:alpha="0.7"/>
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/absolute_white_color">
+
+        <ImageView
+            android:layout_width="@dimen/dp96"
+            android:layout_height="@dimen/dp96"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            app:layout_constraintVertical_bias="0.0"
+            android:src="@drawable/ic_menu_camera"
+            android:id="@+id/imageView" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/profile_recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginStart="@dimen/dp16"
+            app:layout_constraintHorizontal_bias="0">
+        </android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginTop="@dimen/dp32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_recyclerView"
+            app:layout_constraintHorizontal_bias="0.115"
+            app:layout_constraintVertical_bias="0.893" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_profile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/fragmentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Put here profile screen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+</LinearLayout>

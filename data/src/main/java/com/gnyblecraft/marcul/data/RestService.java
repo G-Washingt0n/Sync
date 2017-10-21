@@ -19,7 +19,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
  */
 
 public class RestService {
-
     private static final RestService instance = new RestService();
 
     private RestApi restApi;
@@ -43,13 +42,16 @@ public class RestService {
                 .addInterceptor(logging)
                 .build();
 
-        Gson gson =  new GsonBuilder().create();
+        Gson gson =  new GsonBuilder()
+                .setLenient()
+                .create();
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://save-ideas.com/api/")
+                .baseUrl("https://save-ideas.com/")
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
-                .client(okHttpClient).build();
+                .client(okHttpClient)
+                .build();
 
         restApi = retrofit.create(RestApi.class);
     }
@@ -58,5 +60,10 @@ public class RestService {
     public Observable<ResponseCreateProfile> saveProfile(CreateProfile profile) {
         Log.e("AAAAAA","Request call");
         return restApi.createProfile(profile);
+    }
+
+    public Observable<ResponseFBProfile> saveFBProfile(String profile) {
+        Log.e("AAAAAA","FB Request call");
+        return restApi.createFBProfile(profile);
     }
 }
